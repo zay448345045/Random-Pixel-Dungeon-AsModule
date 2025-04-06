@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'com.lh64.randomdungeon'
     compileSdkVersion 35
 
     defaultConfig {
