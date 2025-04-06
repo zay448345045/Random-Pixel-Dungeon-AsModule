@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 35
 
     defaultConfig {
         applicationId "com.qinglighthouse.android"
         minSdkVersion 14
-        targetSdkVersion 33
+        targetSdkVersion 35
     }
 
     buildTypes {
