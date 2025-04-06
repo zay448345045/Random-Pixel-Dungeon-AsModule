@@ -1,20 +1,71 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
+
+google()
+        mavenCentral()
+
         maven{ url 'https://maven.aliyun.com/repository/google' }
         maven{ url 'https://maven.aliyun.com/repository/jcenter'}
+
 //        maven { url 'https://jitpack.io' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath 'com.android.tools.build:gradle:8.9.1'
     }
 }
 
 allprojects {
     repositories {
+
+google()
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
         maven{ url 'https://maven.aliyun.com/repository/google' }
         maven{ url 'https://maven.aliyun.com/repository/jcenter'}
         maven { url 'https://jitpack.io' }
 
         }
 }
+/*
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2'
+//        classpath 'com.google.gms:google-services:4.3.13'
+//        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.1'
+    }
+}
+
+allprojects {
+
+    ext {
+        appName = 'Statistical SPD'
+        appPackageName = 'com.shatteredpixel.shatteredpixeldungeon.statistical'
+
+        appVersionCode = 20250322
+        appVersionName = '3.0.0-stat-1'
+
+        appJavaCompatibility = JavaVersion.VERSION_1_8
+
+        appAndroidCompileSDK = 31
+        appAndroidMinSDK = 19 //14
+        appAndroidTargetSDK = 31
+
+        gdxVersion = '1.12.1'
+        gdxControllersVersion = '2.2.4-SNAPSHOT'
+        robovmVersion = '2.3.21'
+    }
+    version = appVersionName
+
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+
+}
+*/
