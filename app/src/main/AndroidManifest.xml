@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.lh64.randomdungeon"
+	
 	android:versionCode="190"
 	android:versionName="0.4.2"
 	android:installLocation="auto">
 
     <uses-permission android:name="android.permission.VIBRATE"/>
-
+<!--        package="com.lh64.randomdungeon"-->
 	<uses-feature
 	    android:glEsVersion="0x00020000"/>
 	
